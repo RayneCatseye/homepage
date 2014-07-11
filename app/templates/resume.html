@@ -1,56 +1,83 @@
 {% extends "base.html" %}
 {% block content %}
+<script>
+function showhide(content) {
+  var element = document.getElementById(content);
+  if (element) {
+    if (element.style.display == 'none') {
+      alert("HI!");
+     element.style.display = 'block';
+    }
+  } else {
+    element.style.display = 'none';
+  }
+}
+</script>
+
 <div class="container">
-  <h2>Work History:</h2>
-  <dl>
-    <dt>Google Engineering Practicum Internship (November 2013 - February
-2014)</dt>
-      <dd>Frontend web development for internal services (HTML, CSS,
-JavaScript, jQuery)</dd>
-      <dd>Created interfaces to increase ease of access of analytics
-systems.</dd>
-      <dd>Project in active use by 5 teams by the end of the internship period.</dd>
-      <dd>Completed all assigned goals, as well as ~85% of stretch goals.</dd>
-    <dt>Randwick Cardiology (2013 - current)</dt>
-      <dd>Medical typist and occasional receptionist</dd>
-    <dt>Sydney Endocrinology and Diabetes (2013 - current)</dt>
-      <dd>Sole receptionist, dealing with patient arrival, documentation, payment and correspondence</dd>
-    <dt>Prior Education (2012)</dt>
+  <h3>
+    <a href="#" id="work" onclick="$('#workcontent').toggle()">Work History:</a>
+  </h3>
+  <div id="workcontent">
+    <dl>
+      <dt>Google Engineering Practicum Internship (November 2013 - February 2014)</dt>
+        <dd>Frontend web development for internal services (HTML, CSS, JavaScript, jQuery)</dd>
+          <dd>Created interfaces to increase ease of access of analytics systems.</dd>
+          <dd>Project in active use by 5 teams by the end of the internship period.</dd>
+          <dd>Completed all assigned goals, as well as ~85% of stretch goals.</dd>
+        <dt>Randwick Cardiology (2013 - current)</dt>
+          <dd>Medical typist and occasional receptionist</dd>
+        <dt>Sydney Endocrinology and Diabetes (2013 - current)</dt>
+          <dd>Sole receptionist, dealing with patient arrival, documentation, payment and correspondence</dd>
+        <dt>Prior Education (2012)</dt>
       <dd>Tutor in Mathematics, Chemistry and Physics</dd>
-  </dl>
+    </dl>
+  </div>
 
-  <h2>Skills and Qualifications:</h2>
-  <dl>
-    <dt><i>Programming Languages: </i>C, Python, Bash, HTML, CSS and Javascript incl. JQuery</dt>
-    <dt><i>Operating Systems: </i>Linux (Ubuntu and Debian)</dt>
-    <dt><i>Web Frameworks: </i>Flask</dt>
-  </dl>
+  <h3>
+  <a href='#' id="skills" onclick="$('#skillscontent').toggle();">Skills and Qualifications:</a>
+  </h3>
+  <div id="skillscontent">
+    <dl>
+      <dt><i>Programming Languages: </i>C, Python, Bash, HTML, CSS and Javascript incl. JQuery</dt>
+      <dt><i>Operating Systems: </i>Linux (Ubuntu and Debian)</dt>
+      <dt><i>Web Frameworks: </i>Flask</dt>
+    </dl>
+  </div>
 
-  <h2>Education:</h2>
-  <dl>
-    <dt> University of New South Wales (2013 - present) -
+  <h3> 
+    <a href="#" id="quals"
+onclick="$('#qualscontent').toggle();">Education:</a>
+  </h3>
+  <div id="qualscontent">
+    <dl>
+      <dt> University of New South Wales (2013 - present) -
 Bioinformatics</dt>
-      <dd>Transcript available on request</dd>
-    <dt>Online Education - Coursera</dt>
-      <dd>Introduction to Mathematical Philosophy (Ludwig-Maximilians-Universität München, 87.5%)</dd>
-      <dd>Digital Certificates available on request</dd>
-    <dt>University of New South Wales (2012) - Medicine</dt>
-    <dt>SCEGGS Darlinghurst (2006 - 2011)</dt>
-    <dt>Academic Scholarship (2006 - 2011)</dt>
-      <dd>ATAR 99.3, NSW HSC All-Round Achievers List</dd>
-      <dd>Subjects: Extension 1 Maths, Extension 1 English, Chemistry,
-Physics, French</dd>
-      <dd>Prizes for: All Round Achievement and First in Mathematics</dd>
-  </dl>
+        <dd>Transcript available on request</dd>
+      <dt>Online Education - Coursera</dt>
+        <dd>Introduction to Mathematical Philosophy (Ludwig-Maximilians-Universität München, 87.5%)</dd>
+        <dd>Digital Certificates available on request</dd>
+      <dt>University of New South Wales (2012) - Medicine</dt>
+      <dt>SCEGGS Darlinghurst (2006 - 2011)</dt>
+      <dt>Academic Scholarship (2006 - 2011)</dt>
+        <dd>ATAR 99.3, NSW HSC All-Round Achievers List</dd>
+        <dd>Subjects: Extension 1 Maths, Extension 1 English, Chemistry, Physics, French</dd>
+        <dd>Prizes for: All Round Achievement and First in Mathematics</dd>
+    </dl>
+  </div>
 
-  <h2>Extra Curricular Activities:</h2>
-  <dl>
-    <dt>Duke of Edinburgh Award (Bronze (2008), Silver (2009) and Gold (2011)</dt>
-      <dd>presented by Her Excellency Prof. Marie Bashir)</dd>
-    <dt>Leadership Program UNSW (2013 - current)</dt>
-    <dt>Volunteer with RoboGals UNSW, teaching in-school robotics workshops
+  <h3>
+    <a href="#" id="extra" onclick="$('#extracontent').toggle();">Extra Curricular Activities:</a>
+  </h3>
+  <div id="extracontent">
+    <dl>
+      <dt>Duke of Edinburgh Award (Bronze (2008), Silver (2009) and Gold (2011)</dt>
+        <dd>presented by Her Excellency Prof. Marie Bashir)</dd>
+      <dt>Leadership Program UNSW (2013 - current)</dt>
+      <dt>Volunteer with RoboGals UNSW, teaching in-school robotics workshops
 (2014 - present)</dt>
-    <dt>Writer for CSESoc Newsletter Team, UNSW (2014 - present)</dt>
-  </dl>
+      <dt>Writer for CSESoc Newsletter Team, UNSW (2014 - present)</dt>
+    </dl>
+  </div>
 </div>
 {% endblock %}
