@@ -1,19 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<script>
-function showhide(content) {
-  var element = document.getElementById(content);
-  if (element) {
-    if (element.style.display == 'none') {
-      alert("HI!");
-     element.style.display = 'block';
-    }
-  } else {
-    element.style.display = 'none';
-  }
-}
-</script>
-
 <div class="container">
   <h3>
     <a href="#" id="work" onclick="$('#workcontent').toggle()">Work History:</a>
