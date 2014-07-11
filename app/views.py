@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect
+from flask import render_template, send_from_directory
 from app import app
 
 # Create URL mappings; note that order is important.
@@ -19,3 +19,12 @@ def resume():
 def projects():
     return render_template('projects.html',
         title = 'Projects')
+
+@app.route('/contact/')
+def about():
+    return render_template('contact.html',
+        title = 'Contact Me')
+
+@app.route('/bootstrap.css/')
+def publickey():
+    return render_template('css/bootstrap.css') 
