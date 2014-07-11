@@ -34,6 +34,41 @@ url('http://wallpoper.com/images/00/38/04/67/ubuntu-ocelot_00380467.jpg');
       font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
     }
 
+    h3 > a {
+      color: #333333;
+    }
+
+    .row-centered {
+      text-align:center;
+    }
+
+    .col-centered {
+      display:inline-block;
+      float:none;
+      margin-right:-4px;
+    }
+
+
+    .portfolio-item {
+      margin-bottom:25px;
+    }
+
+    .portfolio-item img {
+      height:200px;
+      min-height:200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .portfolio-item h3,
+    .portfolio-item p {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width:300px;
+    }
+
     #workcontent,
     #skillscontent,
     #qualscontent,
@@ -41,10 +76,12 @@ url('http://wallpoper.com/images/00/38/04/67/ubuntu-ocelot_00380467.jpg');
       display: none;
     }
 
-    h3 > a {
-      color: #333333;
+    .footer {
+      position: fixed;
+      bottom: 0px;
+      background:#ffffff;
+      width:100%;
     }
-
   </style>
 </head>
 <body>
@@ -66,6 +103,7 @@ url('http://wallpoper.com/images/00/38/04/67/ubuntu-ocelot_00380467.jpg');
     </div>
   </div>
   <div class="content">{% block content %}{% endblock %}</div>
+  <br><br>
   <div class="footer">
     <br>
     <p>2014 ESW</p>
