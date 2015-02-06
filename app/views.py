@@ -27,4 +27,14 @@ def about():
 
 @app.route('/bootstrap.css/')
 def publickey():
-    return render_template('css/bootstrap.css') 
+    return render_template('css/bootstrap.css')
+
+# Oh dear Im a lazy person
+@app.route('/zalgo/')
+def zalgo():
+    return render_template('zalgorithm.html',
+        title= 'Z Algorithm')
+
+@app.route('/keybase.txt')
+def keybase():
+    return render_template('keybase.txt')
