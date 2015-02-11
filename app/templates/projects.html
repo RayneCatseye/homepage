@@ -1,46 +1,40 @@
 {% extends "base.html" %}
   {% block content %}
-<div class="container">
-  <h1 class="page-header">Recent Projects</h1>
-  <div class="row row-centered">
-    <div class="span3 col-centered">
-      <div class="col-xs-4 portfolio-item">
-        <a href="https://fusionculturegroupsydney.wordpress.com">
-          <img src="../static/img/fcg.jpeg">
-          </a>
-          <h3>Fusion Culture Group</h3>
-          <p>A website built for a not-for-profit based in Sydney.</p>
-        </div>
-      </div>
-      <div class="span6 col-centered">
-        <div class="col-xs-4 portfolio-item">
-          <a href="#"><img
-src="../static/img/appscript.png">
-          </a>
-          <h3>PromptFill</h3>
-          <p>A GoogleDocs script to make my life a little easier, by
-autocompleting a document template when prompted. Source code is <a
-href="https://github.com/RayneCatseye/promptfill">here</a></p>
-        </div>
-      </div>
-  </div>
+	<div class="container">
+	<h1 class="page-header">Recent Projects</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-4 portfolio-item">
+					<a href="https://github.com/RayneCatseye/SLiMScape"><img src="../static/img/slimscape.png"></a>
+					<h3>SLiMScape</h3>
+					<p>A Java Program designed as a plugin to <a href="http://www.cytoscape.org/">Cytoscape</a>, which analyses protein datasets for the presence Short Linear Motifs. Written as a summer internship project at UNSW.</p>
+				</div>
+				<div class="col-xs-6 col-md-4 portfolio-item">
+					<a href="https://github.com/RayneCatseye/NeuRA"><img src="../static/img/shellscript.png"></a>
+					<h3>Shellscripting</h3>
+					<p>Written for <a href="www.neura.edu.au/people/dr-lucette-cysique">Lucette Cysique</a> at <a href="https://www.neura.edu.au">NeuRA</a>, this program automates analysis of MRI data key to her research into HIV-associated neurocognitive disorders</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-4 portfolio-item">
+					<a href="https://fusionculturegroupsydney.wordpress.com"><img src="../static/img/fcg.jpeg"></a>
+					<h3>Fusion Culture Group</h3>
+					<p>A website built for a not-for-profit based in Sydney.</p>
+				</div>
+			</div>
+		</div>
 
+		<h2>Other Things:</h2>
+		<dl>
+			<dt><a href="http://rosalind.info/">Rosalind</a></dt>
+				<dd>A platform for learning bioinformatics and programming through problem solving. Solutions to problems can be found <a href="https://github.com/RayneCatseye/rosalind">here</a></dd>
+			<dt><a href="http://eudyptula-challenge.org/">Eudulipta Challenge</a></dt> 
+				<dd>A series of programming exercises for the Linux kernel, that start from a very basic "Hello world" kernel module, moving on up in complexity to getting patches accepted into the main Linux kernel source tree. Still a work in progress, but a very fun one.</dd>
+			<dt><a href="https://github.com/RayneCatseye/promptfill">Prompt Fill</a></dt>
+				<dd>A GoogleDocs script to make my life a little easier, by autocompleting a document template when prompted.</dd>
+			<dt><a href="https://github.com/RayneCatseye/Perl2Python">Python 2 Perl</a></dt>
+				<dd>A Perl to Python translator, written in Perl. Essentially a romp through regexes, with occasinally entertaining consequences. Forever a work in progress.</dd>
+		</dl>
+	</div>
+  {% endblock %}
 
-  <h2>Other Interests:</h2>
-  <dl>
-  <dt><a href="http://rosalind.info/">Rosalind</a></dt>
-    <dd>A platform for learning bioinformatics and programming
-through problem solving. Source code is <a
-href="https://github.com/RayneCatseye/rosalind">here</a></dd>
-  <dt><a href="http://eudyptula-challenge.org/">Eudulipta
-Challenge</a></dt> 
-    <dd>A series of programming exercises for the Linux kernel,
-that start from a very basic "Hello world" kernel module, moving on up
-in complexity to getting patches accepted into the main Linux kernel
-source tree. Still a work in progress, but a very fun one.</dd>
-  <dt><a href="http://insearchofspoons.com/zalgo/">Explanation of the Z Algorithm</a></dt>
-    <dd>A stepwise explanation of the Z Algorithm for string matching, explained via words and images.</dd>
-  </dl>
-  <br>
-</div>
-{% endblock %}
