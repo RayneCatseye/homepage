@@ -1,77 +1,90 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-  <h3>
-    <a href="#" id="work" onclick="$('#workcontent').toggle()">Work History</a>
-  </h3>
-  <div id="workcontent">
-    <dl>
-      <dt>Google Engineering Practicum Internship (November 2013 - February 2014)</dt>
-        <dd>Frontend web development for internal services (HTML, CSS, JavaScript, jQuery)</dd>
-          <dd>Created interfaces to increase ease of access of analytics systems.</dd>
-          <dd>Project in active use by 5 teams by the end of the internship period.</dd>
-          <dd>Completed all assigned goals, as well as ~85% of stretch goals.</dd>
-        <dt>UNSW School of Biotechnology and Biomolecular Sciences Intern (November 2014 - February 2015)</dt>
-           <dd>Porting SLiMScape, a Cytoscape plugin designed to find and analyse Short Linear Motifs in DNA.</dd>
-        <dt>Member of the Cysique Team at NeuRA (October - December 2014)</dt>
-          <dd>Automating analysis of brain MRI data</dd>
-        <dt>Australian Government ICT Cadetship (August 2014, position declined)</dt>
-        <dt>Randwick Cardiology (2013 - current)</dt>
-          <dd>Medical typist and occasional receptionist</dd>
-        <dt>Sydney Endocrinology and Diabetes (2013 - current)</dt>
-          <dd>Sole receptionist, dealing with patient arrival, documentation, payment and correspondence</dd>
-        <dt>Prior Education (2012)</dt>
-      <dd>Tutor in Mathematics, Chemistry and Physics</dd>
-    </dl>
-  </div>
 
-  <h3>
-  <a href='#' id="skills" onclick="$('#skillscontent').toggle();">Skills and Qualifications</a>
-  </h3>
-  <div id="skillscontent">
-    <dl>
-      <dt><i>Programming Languages: </i>C, Python, Bash, Java, HTML, CSS and Javascript incl. JQuery</dt>
-      <dt><i>Operating Systems: </i>Linux (Ubuntu and Debian)</dt>
-      <dt><i>Web Frameworks: </i>Flask</dt>
-    </dl>
-  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="span5">
+				<div class="well well-large">
+					<div class="panel-title">Work History</div>
+					<div class="panel-body" id="workcontent">
+						<dl>
+							<dt>Google Engineering Practicum Internship (November 2013 - February 2014)</dt>
+								<dd>Frontend web development for internal services (HTML, CSS, JavaScript, jQuery)</dd>
+								<dd>Created interfaces to increase ease of access of analytics systems.</dd>
+								<dd>Project in active use by 5 teams by the end of the internship period.</dd>
+								<dd>Completed all assigned goals, as well as ~85% of stretch goals.</dd>
+							<br>
+							<dt>UNSW School of Biotechnology and Biomolecular Sciences Intern (November 2014 - February 2015)</dt>
+								<dd>Porting SLiMScape, a Cytoscape plugin designed to find and analyse Short Linear Motifs in DNA.</dd>
+							<br>
+							<dt>Member of the Cysique Team at NeuRA (October - December 2014)</dt>
+								<dd>Automating analysis of brain MRI data for Lucette Cysique</dd>
+							<br>
+							<dt>Australian Government ICT Cadetship (August 2014, position declined)</dt>
+						</dl>
+					</div>
+				</div>
 
-  <h3> 
-    <a href="#" id="quals"
-onclick="$('#qualscontent').toggle();">Education</a>
-  </h3>
-  <div id="qualscontent">
-    <dl>
-      <dt> University of New South Wales (2013 - present) -
-Bioinformatics</dt>
-        <dd>Transcript available on request</dd>
-      <dt>Online Education - Coursera</dt>
-        <dd>Introduction to Mathematical Philosophy (Ludwig-Maximilians-Universität München, 87.5%)</dd>
-        <dd>Digital Certificates available on request</dd>
-      <dt>University of New South Wales (2012) - Medicine</dt>
-      <dt>SCEGGS Darlinghurst (2006 - 2011)</dt>
-        <dd>Academic Scholarship (2006 - 2011)</dd>
-        <dd>ATAR 99.3, NSW HSC All-Round Achievers List</dd>
-        <dd>Subjects: Extension 1 Maths, Extension 1 English, Chemistry, Physics, French</dd>
-        <dd>Prizes for: All Round Achievement and First in Mathematics</dd>
-    </dl>
-  </div>
+				<br>
+				<div class="well well-large">
+					<div class="panel-title">Education</div>
+					<div class="panel-body" id="qualscontent">
+						<dl>
+							<dt> University of New South Wales (2013 - present) - Bioinformatics</dt>
+								<dd>Transcript available on request</dd>
+							<br>
+							<dt>Online Education - Coursera</dt>
+								<dd>Introduction to Mathematical Philosophy (Ludwig-Maximilians-Universität München, 87.5%)</dd>
+							<br>
+							<dt>University of New South Wales (2012) - Medicine</dt>
+							<br>
+							<dt>SCEGGS Darlinghurst (2006 - 2011)</dt>
+								<dd>Academic Scholarship (2006 - 2011)</dd>
+								<dd>ATAR 99.3, NSW HSC All-Round Achievers List</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
 
-  <h3>
-    <a href="#" id="extra" onclick="$('#extracontent').toggle();">Awards & Extra Curricular Activities</a>
-  </h3>
-  <div id="extracontent">
-    <dl>
-      <dt>School of Biotechnology and Biomolecular Sciences Vacation Research Scholarship (2014)</dt>
-        <dd>Scholarship for summer research under Dr Richard Edwards.</dd>
-      <dt>Lyceum Club Women in Engineering Leadership Award Finalist</dt>
-        <dd>Award recognising leadership, support and engagement with women in engineering (at both a university and high school level)</dd>
-      <dt>Duke of Edinburgh Award (Bronze (2008), Silver (2009) and Gold (2011)</dt>
-        <dd>presented by Her Excellency Prof. Marie Bashir)</dd>
-      <dt>Leadership Program UNSW (2013 - current)</dt>
-      <dt>Volunteer with Girl’s Programming Network and CompClub, teaching programming and robotics to school children (2014-present)</dt>
-      <dt>Frequent writer for CSESoc Newsletter Team, UNSW (2014 - present)</dt>
-    </dl>
-  </div>
+			<div class="span5">
+				<div class="well well-large">
+					<div class="panel-title"> Skills</div>
+					<div class="panel-body" id="skillscontent">
+						<dl>
+							<dt><i>Programming Languages: </i>C, Python, Bash, Java, HTML, CSS and Javascript incl. JQuery</dt>
+							<br>
+							<dt><i>Operating Systems: </i>Linux (Ubuntu and Debian)</dt>
+							<br>
+							<dt><i>Web Frameworks: </i>Flask</dt>
+						</dl>
+					</div>
+				</div>
+
+				<div class="well well-large">
+					<div class="panel-title">Awards & Co-Curricular</div>
+					<div class="panel-body" id="extracontent">
+						<dl>
+							<dt>School of Biotechnology and Biomolecular Sciences Vacation Research Scholarship (2014)</dt>
+								<dd>Scholarship for summer research under Dr Richard Edwards.</dd>
+							<br>
+							<dt>Lyceum Club Women in Engineering Leadership Award Finalist</dt>
+								<dd>Award recognising leadership, support and engagement with women in engineering (at both a university and high school level)</dd>
+							<br>
+							<dt>Duke of Edinburgh Award (Bronze (2008), Silver (2009) and Gold (2011)</dt>
+								<dd>presented by Her Excellency Prof. Marie Bashir)</dd>
+							<br>
+							<dt>Leadership Program UNSW (2013 - current)</dt>
+							<br>
+							<dt>Volunteer with Girl’s Programming Network and CompClub, teaching programming and robotics to school children (2014-present)</dt>
+							<br>
+							<dt>Frequent writer of articles and puzzles for CSESoc Newsletter Team, UNSW (2014 - present)</dt>
+							<br>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 {% endblock %}
