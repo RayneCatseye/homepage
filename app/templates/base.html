@@ -7,13 +7,12 @@
   <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
   <style>
     .hero-unit {
-        background-image:
-url('../static/img/cat.jpg');
+        background-image: url('../static/img/cat.jpg');
         color: #ffffff;
     }
 
     .navbar-inner {
-      background-color: #333333;
+      background-color: #000000;
       border-color: #000000;
       background-image: none;
     }
@@ -24,18 +23,29 @@ url('../static/img/cat.jpg');
 
     .navbar .nav > li > a:focus,
     .navbar .nav > li > a:hover {
-      background-color: #000000;
+      background-color: #200b14;
       color: #ffffff;
     }
 
     body {
-      background-color: #ffffff;
-      color: #333333
-      font-family: monospace;
+      background-image: url("../static/img/Universe.jpg");
+      background-size: 100%;
+      color: #333333;
+      font-family: -webkit-pictograph;
+    }
+
+    .well {
+      opacity: 0.7;
+      background-color: #d5d1f2;
     }
 
     p > a {
       color: #333333;
+    }
+
+    h1 {
+      color: #653449;
+      border-color: #000000;
     }
 
     .row {
@@ -76,13 +86,6 @@ url('../static/img/cat.jpg');
     .panel-title {
       font-size: 20px;
     }
-
-    .footer {
-      position: fixed;
-      bottom: 0px;
-      background:#ffffff;
-      width:100%;
-    }
   </style>
 </head>
 <body>
@@ -106,10 +109,6 @@ url('../static/img/cat.jpg');
   <div class="content">{% block content %}{% endblock %}</div>
   <br><br>
   <div class="footer">
-    <br>
-    <p>2014 ESW  |  <a
-href="https://github.com/RayneCatseye/homepage">Source Code</a>
-    </p>
   </div>
   </div>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
