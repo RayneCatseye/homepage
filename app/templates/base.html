@@ -7,39 +7,50 @@
   <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
   <style>
     .navbar-inner {
-      background-color: #000000;
-      border-color: #000000;
-      background-image: none;
+      background-image: url("../static/img/SparkleBackground.jpg");
+    }
+
+    .navbar .nav {
+      padding-left: 30px;
     }
 
     .navbar .nav > li > a {
-      color: #ffffff;
+      color: #0A5693;
+      text-shadow: none;
+      font-size: 16px;
     }
 
     .navbar .nav > li > a:focus,
     .navbar .nav > li > a:hover {
       background-color: #040c0f;
-      color: #ffffff;
     }
 
     body {
-      background-image: url("../static/img/SparkleBackground.jpg");
+      padding-top: 120px;
+      background-color: #FFFFFF
       background-size: 100%;
       color: #000000;
-      font-family: -webkit-pictograph;
+      font-family: 'Gudea', 'Gill Sans', 'Arial';
+    }
+
+    @media screen and (max-width: 768px) {
+      body { padding-top: 0px; }
     }
 
     .well {
-      background: rgba(213, 209, 242, 0.6);
+      background-color: #E9EFF6;
     }
 
     a {
-      color: #582536;
+      color: #0A5693;
     }
 
     h1 {
-      color: #060b0f;
-      border-color: #ffffff;
+      padding-left: 40px;
+      color: #000000;
+      font-family: 'Alegreya SC', 'Garamond', 'Georgia';
+      font-size: 42px;
+      line-height: 40px;
     }
 
     #homepage-container {
@@ -93,26 +104,13 @@
     .panel-title {
       font-size: 20px;
     }
-
-    ::-moz-selection { /* Code for Firefox */
-      background: #653449;
-    }
-
-    ::selection {
-      background: #653449;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-  {% if title %}
-  <title>{{title}}</title>
-  {% else %}
-  <title>Emily Saunders Walmsley</title>
-  {% endif %}
-  <h1>{{title}}</h1>
-  <div class="navbar navbar-default">
+  <div class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-inner">
+       <h1>{{title}}</h1>
        <ul class="nav">
          <li><a href="/">Home</a></li>
          <li><a href="/projects">Projects</a></li>
