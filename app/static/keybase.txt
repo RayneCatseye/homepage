@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/emilysw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://insearchofspoons.com
+  * I am emilysw (https://keybase.io/emilysw) on keybase.
+  * I have a public key with fingerprint 72E8 61A9 9981 CB98 33B7  62C3 DBC3 3187 2D2B 743A
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ea1357456b8057ff0aacb560e49d9ae6f308d2d9b09bdcf632641cd753dd08850a",
+            "fingerprint": "72e861a99981cb9833b762c3dbc331872d2b743a",
+            "host": "keybase.io",
+            "key_id": "dbc331872d2b743a",
+            "kid": "0101ea1357456b8057ff0aacb560e49d9ae6f308d2d9b09bdcf632641cd753dd08850a",
+            "uid": "ea2aee1818ed7ecf41ef5eb9a5e26700",
+            "username": "emilysw"
+        },
+        "revoke": {
+            "sig_ids": [
+                "06ac3f13b36e419527219a5d2b10aef4c8a87425443ea1acd00b291f5bbf26ed0f"
+            ]
+        },
+        "service": {
+            "hostname": "insearchofspoons.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1448542271,
+    "expire_in": 157680000,
+    "prev": "06f049a5b8ddfd7d0a7499395299f6e2b3ef82495c27ce32ed4071193893a455",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMJ1AnicrVJvaFZVHH7fVtYGm0NIEmLUlf7Q1jp/7z3nzdgbSBFRH0QXMeP1/N1u
+7957X++9m+/bUPpi/0aZFP0hC4uUlVpaEC6NtPxQSWkRQoTBwsbSpkEs0mF27rBv
+fex8OZzD8zy/53nOOdLeUmgr/vg5fPL27qxUPHr4/Eih/6FC35gnY930SmNe1Sxs
+ZlibNKtUQ+2VPAABNAJiGhDqSwZoYC0QQknqA0O45sL4FgOmkeYScKmV9THyCVQ6
+oFhrwBgFwuvxbBgNmqSehFHmZANkmA8F55xBJTnDWAY+UlhLhTFkAdJIBgTnxKE4
+zRnOnBSp6Q1jd+cOlQV7/4H/n32PLMgZgYQxkEFmdGCUJdBYaiQX1CA/ACAHpiaJ
+RM3k6Fo43Ew3eBt7vMSMxlWT15qGg85z6pUGPOALhS3EEvuGQE5RgKCTchkgEMYS
+xQQLCKKEYJdBKA2ARBxaKqVFvtHAeo84bTdwNFQL4nlJl4eHUWpEooZim9bjOEp7
+VVxz9upJnMUqHnaIoSyrl3JzWbOeMzYYWbmsVZFhpN1LOcKoSdIwjrwSdEiVhbk4
+JIRRglAAezzTqIeJqYQ5ggY+A27lY8xoXr9vAXGRJNPa6kADERDOsYvKufUNkthY
+hginCgXKYGQ0AQGEHDOOBaHUy9Otj2KvxJxNMegkXX+RyEYS42387NDaKwvFtsKi
+q67If3ChrbXz339d6r56ftGOgeOHj5aXbO3f34GmTq04aQcuLr9lPt3bPPTNT9VV
+bXfO7btj7OdLK95avWXTM8ejM3N0x0Tt0/fOPPXBNe8sWx7yXeWWyWP09OJWTadb
+Nn18sHj26/alH075b5967IHne7d/91LXxMiyvhdee3ALOUuu/2RdY+XBe9U2/e59
+O+vbprpm16050Hg2e7r9/Ps3jl/bfezR03/f9NHJC+t/nd58f8ebR7460L391fYn
++n9rjO9ee8/QrguzaypvzPyyZHNcfHHpbTc/Xn45Opd9mYy9/nvXzK2Lv7hr9ap9
+fd9uHe6dm3l4tDx96bnO+b/+/H78RG3yh7tnL07vbzZaz5XZDZOd1T0rr9v7ysQJ
+2vHHP9TBYXM=
+=Q4/G
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/emilysw
+
+==================================================================
+
